@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head> 
-<meta charset="utf-8"> 
-<title>工业产品垃圾</title> 
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>提示图片示例</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .image-placeholder {
+      width: 300px;
+      height: 200px;
+      border: 2px dashed #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      color: #888;
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+    .image-placeholder:hover {
+      background-color: #eee;
+    }
+  </style>
 </head>
 <body>
 
-<h2>皮卡好奇又傻逼购买700块工业垃圾产品娃娃</h2>
-  <h2>下次直接发💰给群友，不用看工业垃圾了</h2>
-<img src="https://plc.372164885.xyz/f/kQsY/IMG_20250722_114224.jpg" width="2160" height="8614">
+  <h1>图片上传提示</h1>
+  <div class="image-placeholder" onclick="alert('点击此区域可以上传图片')">
+    点击此处上传图片
+  </div>
+
+  <!-- 可选：添加一个文件上传功能 -->
+  <input type="file" accept="image/*" style="margin-top: 20px;">
 
 </body>
 </html>
